@@ -15,5 +15,16 @@ Buon divertimento e a domani!
 
 ## svolgimento:
 
-| cosa | tipo | attributi |
-| ---- | ---- | --------- |
+| cosa            | tipo        | attributi            |
+| --------------- | ----------- | -------------------- |
+| chassis         | bigint      | primary key          |
+| brand           | Varchar(50) | notNull              |
+| model           | varchar(50) | notnull              |
+| displacement    | smallint    | null, unsigned       |
+| anno_produzione | year        | notnull              |
+| price           | mediumint   | notnull, unsigned    |
+| number_owner    | tinyint     | unsigned, default(1) |
+| note            | text        | null                 |
+| plate           | char(7)     | notnull              |
+| km              | mediumint   | unsigned, notnull    |
+| fuel            | varchar(25) | notnull              |
